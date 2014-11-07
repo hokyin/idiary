@@ -1,0 +1,153 @@
+/*
+Theme Name:iDiary
+Theme URI:http://zww.me/wordpress-theme-iDiary.z-turn
+Description:It is a simple WordPress theme without any plugin needed, little images, custom-menu, widgets, threaded-comments. For WordPress version 3.7+
+Version:0.9.5
+Author:zwwooooo
+Author URI:http://zww.me/
+Tags:custom-menu, threaded-comments, two-columns, fixed-layout, right-sidebar, theme-options, responsive-layout
+
+License:GNU General Public License, v2 (or newer)
+License URI:http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+
+*/
+
+/* RESET -------- */
+*{
+	margin:0;
+	padding:0;
+}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	vertical-align:baseline;
+}
+.p_meta1{margin:8px 0;}
+.p_meta a{text-decoration: none;font-size: 11px;}
+body{padding-top:70px}
+#main{margin:0 auto;max-width:980px;display: block;}
+#content{width:69%;float:left;display: block;font: 14px "Microsoft YaHei";border:1px solid #e7e7e7;padding:10px;margin-bottom:15px;list-style: none;border-radius: 4px;line-height:16px;}
+#content.p{line-height:16px;}
+#content1{width:69%;float:left;display: block;font: 14px "Microsoft YaHei";margin-bottom:15px;list-style: none;}
+#sidebar{width:30%;float:right;display: block;white-space:nowrap;word-break:keep-all;overflow:hidden;text-overflow:ellipsis;float:right;}
+#footer{display: block;float:left;
+width: 100%;
+-height: 40px;
+-padding: 10px 0 18px;
+line-height: 1.65;
+font-size: 11px;
+color: #999;}
+#copyright{display: block;float:left;
+width: 100%;
+height: 40px;
+padding: 10px 0 18px;
+border-top: 3px solid #DDD;
+line-height: 1.65;
+font-size: 11px;
+color: #999;}
+.footer_inner{display: block;
+max-width: 980px;
+padding: 0 20px;
+margin: 0 auto;}
+.site_title{font-size:26px;float:left;padding: 11px 22px 11px 0;font-family:"Comic Sans MS";}
+.site_title a{text-decoration: none;}
+.container {text-align:center}
+.title {
+line-height: 24px;padding-bottom: 8px;
+font-size: 24px;
+color: #333;
+}
+.title a {
+padding-bottom: 0px;text-decoration: none;
+color: #333;
+}
+.title a:hover {border-bottom:1px solid #000;
+color: #2C63A9;
+}
+.p_comment{float:right}
+.p_comment a{color:#fff}
+.widget li{display: block;}
+.widget h3{background:#f8f8f8;border-left:1px solid #e7e7e7;border-right:1px solid #e7e7e7;border-top:1px solid #e7e7e7;border-top-left-radius: 4px;
+border-top-right-radius: 4px;padding: 10px 15px;
+}
+.widget li a{text-decoration: none;}
+.commentlist{list-style: none;}
+.post_path{background:#f8f8f8;font-size:11px;padding-bottom:8px;}
+.social-main span {
+float: left;
+width: 30%;
+text-align: center;
+margin: 5px;
+border-radius: 2px;
+}
+.social-main {
+margin: 0 25%;
+}
+.social-main :hover {
+background: #878787;
+transition: all .3s ease-in 0s;
+}
+.social-main a {
+color: #fff;
+line-height: 35px;
+}
+#social {
+margin: 15px -20px;
+_display: none;
+}
+.like {background: #f85d00;}.comment-s {background: #91c24f;}.share-s {background: #ecb842;}
+.wenzhengdi{float:left;width:100%;}
+.p_meta_s_t{font-size:11px;}
+#nav_below{width:100%;}
+.nav-previous{float:left;width:48%;margin-bottom:8px;}
+.nav-next{float:right;width:48%;margin-bottom:8px;}
+.nav-next a {float:right;}
+.comment-list li{list-style: none;}
+.comment-form-comment{width:100%;margin:10px 0;}
+.input-group {margin:5px 0;}
+.comment-author.vcard.comment-meta{float:left;}
+.comment-meta{float:left;}
+.comment-list li {
+background: #fff;
+margin: 0 0 10px 0;
+padding: 10px 15px;
+border: 1px solid #e7e7e7;
+word-wrap: break-word;
+word-break: break-all;
+}
+.comment-list .avatar {
+float: left;
+width: 32px;
+height: 32px;
+margin: 6px 10px 0 0;
+border: 1px solid #e7e7e7;
+}
+#wzbq{border:1px solid #ddd;padding:5px 8px;background:#f8f8f8;}
+.comments-title{padding:8px;}
+.post-163{line-height:23px;}
+.post{line-height:23px;}
+#submit{width:22%}
+#reset{width:22%}
+.top{float:right;}
+#links{max-width:980px;margin:0 auto 15px;height:47px;border:1px solid #ddd;border-radius: 4px;}
+#links ul li {float:left;list-style: none;padding:3px 0 0 8px;}
+/*侧栏跟随*/
+.div2{top:60px;z-index:999;position:fixed;_position:absolute;border:1px solid #e7e7e7;padding:10px;white-space:nowrap;word-break:keep-all;overflow:hidden;text-overflow:ellipsis;}
+.div2 li{list-style: none;}
+#float{border:1px solid #e7e7e7;padding:10px;width:294px;}
+.page-numbers{padding:5px 15px;background:#e7e7e7;margin-right:px;}
+#loading-comments {display: none; width: 100%; height: 45px; background: #a0d536; text-align: center; color: #fff; font-size: 22px; line-height: 45px; }
+#comments-navi{padding:15px 0;}
+#views-li{float:right;}
+.entry li{list-style: none;}
+@media screen and (max-width: 768px) {
+ #content1{width:100%;}
+ #sidebar {
+    float: left; 
+    padding: 2%;
+    width: 96%;
+    display:none;
+ }
+}
